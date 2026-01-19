@@ -57,8 +57,8 @@ const Classes = () => {
     return (
         <div className="classes-page section container">
             <Helmet>
-                <title>Parivartan Vidhya Mandir | Classes</title>
-                <meta name="description" content="Explore the classes offered at Parivartan Vidhya Mandir, from Play Group to Primary School." />
+                <title>Parivarthana Vidhya Mandir | Classes</title>
+                <meta name="description" content="Explore the classes offered at Parivarthana Vidhya Mandir, from Play Group to Primary School." />
             </Helmet>
 
             <SectionTitle title="Our Classes" subtitle="Tailored Learning for Every Age" />

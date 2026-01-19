@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import HeroSection from '../components/HeroSection';
+import GurujiSection from '../components/GurujiSection';
+import WorksSection from '../components/WorksSection';
 import SectionTitle from '../components/SectionTitle';
 import { FaChalkboardTeacher, FaChild, FaShapes, FaHandsHelping } from 'react-icons/fa';
 import '../styles/Home.css';
@@ -15,19 +16,17 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Parivartan Vidhya Mandir | Home</title>
-                <meta name="description" content="Parivartan Vidhya Mandir - An Evolution in Education. Best Preschool and Primary School in Bijapur, Karnataka." />
+                <title>Parivartana Vidhya Mandir | Home</title>
+                <meta name="description" content="Parivarthana Vidhya Mandir - An Evolution in Education. Best Preschool and Primary School in Bijapur, Karnataka." />
             </Helmet>
-
-            <HeroSection />
 
             {/* Intro Section */}
             <section className="section container">
                 <div className="home-intro">
                     <div className="home-intro-text">
-                        <SectionTitle title="Welcome to Parivartan" subtitle="A Place Where Learning Begins" />
+                        <SectionTitle title="Welcome to Parivartana" subtitle="A Place Where Learning Begins" />
                         <p>
-                            Parivartan Vidhya Mandir, established in 2015, is dedicated to nurturing young minds.
+                            Parivartana Vidhya Mandir, established in 2015, is dedicated to nurturing young minds.
                             We focus on child-centric education, values, discipline, and holistic growth.
                             Under the guidance of our Principal, Acharya, we provide a safe and stimulating environment
                             where every child can flourish physically, mentally, socially, and morally.
@@ -37,10 +36,13 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="home-intro-image">
-                        <img src="https://images.unsplash.com/photo-1577896335477-2858506f48db?q=80&w=1000&auto=format&fit=crop" alt="Kids Studying" />
+                        <img src="https://www.instagram.com/parivartan_vidya_mandir/" alt="Kids Studying" />
                     </div>
                 </div>
             </section>
+
+            <GurujiSection />
+            <WorksSection />
 
             {/* Why Choose Us Icons Grid */}
             <section className="section bg-off-white">
@@ -87,7 +89,7 @@ const Home = () => {
             {/* Gallery Preview Section */}
             <section className="section bg-off-white">
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <SectionTitle title="Life at Parivartan" subtitle="Glimpses of activities, celebrations, and learning" />
+                    <SectionTitle title="Life at Parivarthana" subtitle="Glimpses of activities, celebrations, and learning" />
 
                     <div className="home-gallery-grid" style={{
                         display: 'grid',

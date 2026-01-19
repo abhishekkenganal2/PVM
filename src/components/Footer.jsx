@@ -27,14 +27,14 @@ const Footer = () => {
             <div className="container footer-container">
                 {/* Brand Column */}
                 <div className="footer-col brand-col">
-                    <h2 className="footer-logo">Parivartan <span className="highlight">Vidhya Mandir</span></h2>
+                    <h2 className="footer-logo">Parivarthana <span className="highlight">Vidhya Mandir</span></h2>
                     <p className="footer-tagline">
                         Nurturing young minds since 2015. We are committed to holistic development, discipline, and creative learning.
                     </p>
                     <div className="social-links">
                         <a href="#" className="social-icon fb"><FaFacebook /></a>
-                        <a href="#" className="social-icon insta"><FaInstagram /></a>
-                        <a href="#" className="social-icon yt"><FaYoutube /></a>
+                        <a href="https://www.instagram.com/parivartan_vidya_mandir/" className="social-icon insta"><FaInstagram /></a>
+                        <a href="https://www.youtube.com/channel/UCc3KuZj0niq8UHaF3lKd_Rg" className="social-icon yt"><FaYoutube /></a>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Parivartan Vidhya Mandir. Crafted with care.</p>
+                <p>&copy; {new Date().getFullYear()} Parivarthana Vidhya Mandir. Crafted with care.</p>
             </div>
         </footer>
     );

@@ -18,8 +18,8 @@ const About = () => {
     return (
         <div className="about-page">
             <Helmet>
-                <title>Parivartan Vidhya Mandir | About Us</title>
-                <meta name="description" content="Learn about Parivartan Vidhya Mandir's vision, aims, and history." />
+                <title>Parivarthana Vidhya Mandir | About Us</title>
+                <meta name="description" content="Learn about Parivarthana Vidhya Mandir's vision, aims, and history." />
             </Helmet>
 
             {/* Header Banner - could use a different image */}
@@ -41,7 +41,7 @@ const About = () => {
                     <div className="intro-text">
                         <h2 className="sub-heading">An Evolution in Education</h2>
                         <p>
-                            <strong>Parivartan Vidhya Mandir</strong>, established in 2015, is more than just a school.
+                            <strong>Parivarthana Vidhya Mandir</strong>, established in 2015, is more than just a school.
                             It is a nurturing ground for the leaders of tomorrow. Located in the heart of Bijapur,
                             we are committed to providing a safe, stimulating, and value-based environment for children to grow.
                         </p>
@@ -105,7 +105,7 @@ const About = () => {
                     <div className="principal-text">
                         <h3>Principal's Message</h3>
                         <blockquote>
-                            "Education is not just about filling a bucket, but lighting a fire. At Parivartan, we strive to light that fire of curiosity and confidence in every child."
+                            "Education is not just about filling a bucket, but lighting a fire. At Parivarthana, we strive to light that fire of curiosity and confidence in every child."
                         </blockquote>
                         <p className="author">- Acharya</p>
                         <p className="role">Principal</p>

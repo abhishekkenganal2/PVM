@@ -1,0 +1,79 @@
+.guruji-section {
+    padding: 80px 0;
+    background-color: #fdfbf7;
+    /* Warm, light background */
+    overflow: hidden;
+}
+
+.guruji-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.guruji-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.guruji-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.guruji-image:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.guruji-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.guruji-content h2.section-title {
+    font-size: 1.2rem;
+    color: var(--primary-color, #e67e22);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.guruji-name {
+    font-size: 2.5rem;
+    color: var(--text-color, #333);
+    margin-bottom: 25px;
+    font-family: var(--header-font, sans-serif);
+}
+
+.guruji-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .guruji-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .guruji-image {
+        transform: rotate(0);
+        max-width: 300px;
+    }
+
+    .guruji-content h2.section-title {
+        text-align: center;
+    }
+}

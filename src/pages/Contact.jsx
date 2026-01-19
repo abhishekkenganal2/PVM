@@ -12,8 +12,8 @@ const Contact = () => {
     return (
         <div className="section container">
             <Helmet>
-                <title>Parivartan Vidhya Mandir | Contact Us</title>
-                <meta name="description" content="Contact Parivartan Vidhya Mandir in Bijapur for admissions and enquiries." />
+                <title>Parivarthana Vidhya Mandir | Contact Us</title>
+                <meta name="description" content="Contact Parivarthana Vidhya Mandir in Bijapur for admissions and enquiries." />
             </Helmet>
 
             <SectionTitle title="Contact Us" subtitle="We'd love to hear from you" />
