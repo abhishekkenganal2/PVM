@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="container navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMenu}>
                     {/* You can replace this with an image logo */}
-                    <span className="logo-text">Parivarthana <span className="highlight">Vidhya Mandir</span></span>
+                    <span className="logo-text">Parivartan <span className="highlight">Vidya Mandir</span></span>
                 </Link>
 
                 <div className="menu-icon" onClick={toggleMenu}>

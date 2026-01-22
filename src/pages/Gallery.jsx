@@ -42,7 +42,7 @@ const Gallery = () => {
     return (
         <div className="section container">
             <Helmet>
-                <title>Parivarthana Vidhya Mandir | Gallery</title>
+                <title>Parivartan Vidya Mandir | Gallery</title>
                 <meta name="description" content="Explore our gallery showing classrooms, annual day, sports meet, and other celebrations." />
             </Helmet>
 

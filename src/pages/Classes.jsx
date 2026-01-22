@@ -57,8 +57,8 @@ const Classes = () => {
     return (
         <div className="classes-page section container">
             <Helmet>
-                <title>Parivarthana Vidhya Mandir | Classes</title>
-                <meta name="description" content="Explore the classes offered at Parivarthana Vidhya Mandir, from Play Group to Primary School." />
+                <title>Parivartan Vidya Mandir | Classes</title>
+                <meta name="description" content="Explore the classes offered at Parivartan Vidya Mandir, from Play Group to Primary School." />
             </Helmet>
 
             <SectionTitle title="Our Classes" subtitle="Tailored Learning for Every Age" />
@@ -93,7 +93,7 @@ const Classes = () => {
             <div className="enroll-cta">
                 <h3>Start Your Child's Journey Today</h3>
                 <p>Admissions are open for the upcoming academic year.</p>
-                <Button to="/admissions" type="primary">Apply Now</Button>
+                <Button to="/contact" type="primary">Apply Now</Button>
             </div>
         </div>
     );

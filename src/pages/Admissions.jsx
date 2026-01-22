@@ -12,11 +12,11 @@ const Admissions = () => {
     return (
         <div className="section container">
             <Helmet>
-                <title>Parivarthana Vidhya Mandir | Admissions</title>
-                <meta name="description" content="Admission process and guidelines for Parivarthana Vidhya Mandir." />
+                <title>Parivartan Vidya Mandir | Admissions</title>
+                <meta name="description" content="Admission process and guidelines for Parivartan Vidya Mandir." />
             </Helmet>
 
-            <SectionTitle title="Admissions" subtitle="Join the Parivarthana Family" />
+            <SectionTitle title="Admissions" subtitle="Join the Parivartan Family" />
 
             <div style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <div className="admission-step" style={{

@@ -12,8 +12,8 @@ const Contact = () => {
     return (
         <div className="section container">
             <Helmet>
-                <title>Parivarthana Vidhya Mandir | Contact Us</title>
-                <meta name="description" content="Contact Parivarthana Vidhya Mandir in Bijapur for admissions and enquiries." />
+                <title>Parivartan Vidya Mandir | Contact Us</title>
+                <meta name="description" content="Contact Parivartan Vidya Mandir in Bijapur for admissions and enquiries." />
             </Helmet>
 
             <SectionTitle title="Contact Us" subtitle="We'd love to hear from you" />
@@ -55,7 +55,7 @@ const Contact = () => {
                             <div style={{ color: '#00BFFF', fontSize: '1.2rem' }}><FaEnvelope /></div>
                             <div>
                                 <strong>Email:</strong><br />
-                                <a href="mailto:fzsultan21@gmail.com">fzsultan21@gmail.com</a>
+                                <a href="mailto:pvmschoolbjp@gmail.com">pvmschoolbjp@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                     <div className="map-container" style={{ width: '100%', height: '300px', borderRadius: '12px', overflow: 'hidden' }}>
                         <iframe
                             title="School Location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.375372670205!2d75.72502447389155!3d16.807724119247716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc65542e5047bc1%3A0x2f9b85828c664546!2sParivarthan%20Vidya%20Mandir!5e0!3m2!1sen!2sin!4v1768234788612!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.375372670205!2d75.72502447389155!3d16.807724119247716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc65542e5047bc1%3A0x2f9b85828c664546!2sParivartan%20Vidya%20Mandir!5e0!3m2!1sen!2sin!4v1768234788612!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
