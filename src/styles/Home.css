@@ -16,10 +16,22 @@
     font-size: 1.1rem;
     color: var(--text-light);
     line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .home-intro p,
+html.dark-mode .home-intro p {
+    color: #e0e0e0;
 }
 
 .bg-off-white {
     background-color: var(--off-white);
+    transition: background-color 0.3s ease;
+}
+
+[data-theme="dark"] .bg-off-white,
+html.dark-mode .bg-off-white {
+    background-color: #1e1e1e;
 }
 
 .features-grid {
@@ -35,42 +47,44 @@
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .feature-card,
+html.dark-mode .feature-card {
+    background: #1e1e1e;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
 }
 
-.icon-wrapper {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.color-blue {
-    color: var(--primary-blue);
-}
-
-.color-yellow {
-    color: var(--primary-yellow);
-}
-
-.color-green {
-    color: var(--primary-green);
-}
-
-.color-pink {
-    color: var(--primary-pink);
+[data-theme="dark"] .feature-card:hover,
+html.dark-mode .feature-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .feature-card h3 {
     font-size: 1.25rem;
     margin-bottom: 10px;
     color: var(--text-dark);
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .feature-card h3,
+html.dark-mode .feature-card h3 {
+    color: #ffffff;
 }
 
 .feature-card p {
     color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .feature-card p,
+html.dark-mode .feature-card p {
+    color: #e0e0e0;
 }
 
 .classes-preview {
@@ -91,7 +105,20 @@
     transition: all 0.3s;
 }
 
+[data-theme="dark"] .class-card-mini,
+html.dark-mode .class-card-mini {
+    background: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+}
+
 .class-card-mini:hover {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+[data-theme="dark"] .class-card-mini:hover,
+html.dark-mode .class-card-mini:hover {
     background-color: var(--primary-blue);
     color: white;
 }
@@ -102,6 +129,12 @@
 
 .class-card-mini h4 {
     margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .class-card-mini h4,
+html.dark-mode .class-card-mini h4 {
+    color: #ffffff;
 }
 
 .class-card-mini a {

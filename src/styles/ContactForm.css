@@ -3,12 +3,20 @@
     padding: 30px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .contact-form-container,
+html.dark-mode .contact-form-container {
+    background: #1e1e1e;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form-container h3 {
     text-align: center;
     color: var(--primary-blue);
     margin-bottom: 25px;
+    transition: color 0.3s ease;
 }
 
 .contact-form {
@@ -36,6 +44,12 @@ label {
     font-weight: 600;
     font-size: 0.9rem;
     color: var(--text-dark);
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] label,
+html.dark-mode label {
+    color: #e0e0e0;
 }
 
 input,
@@ -46,7 +60,18 @@ textarea {
     border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea,
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea {
+    background-color: #2a2a2a;
+    border-color: #444444;
+    color: #e0e0e0;
 }
 
 input:focus,
@@ -54,6 +79,17 @@ select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary-blue);
+    background-color: #2a2a2a;
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] select:focus,
+[data-theme="dark"] textarea:focus,
+html.dark-mode input:focus,
+html.dark-mode select:focus,
+html.dark-mode textarea:focus {
+    background-color: #333333;
+    color: #e0e0e0;
 }
 
 .submit-btn {

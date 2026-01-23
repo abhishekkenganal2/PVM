@@ -1,10 +1,30 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
+import { useDarkMode } from '../context/DarkModeContext';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
+
+    const navData = [
+        {
+            id: 1, title: 'Home', path: '/'
+        },
+        {
+            id: 2, title: 'About Us', path: '/about'
+        },
+        {
+            id: 3, title: 'Classes', path: '/classes'
+        },
+        {
+            id: 4, title: 'Gallery', path: '/gallery'
+        },
+        {
+            id: 5, title: 'Contact', path: '/contact'
+        },
+    ]
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -26,33 +46,18 @@ const Navbar = () => {
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </div>
 
+                <button className="dark-mode-toggle" onClick={toggleDarkMode} title={isDarkMode ? 'Light Mode' : 'Dark Mode'}>
+                    {isDarkMode ? <FaSun /> : <FaMoon />}
+                </button>
+
                 <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
-                    <li className="nav-item">
-                        <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMenu}>
-                            Home
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/about" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMenu}>
-                            About Us
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/classes" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMenu}>
-                            Classes
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/gallery" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMenu}>
-                            Gallery
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/contact" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMenu}>
-                            Contact
-                        </NavLink>
-                    </li>
-                    {/* CTA Button in mobile menu if needed, or keeping it inline */}
+                    {navData.map((item) => (
+                        <li className="nav-item">
+                            <NavLink key={item.id} to={item.path} className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMenu}>
+                                {item.title}
+                            </NavLink>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </nav>

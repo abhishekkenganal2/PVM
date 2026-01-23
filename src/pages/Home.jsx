@@ -31,10 +31,10 @@ const Home = () => {
     ];
 
     const features = [
-        { id: 1, icon: FaChalkboardTeacher, title: 'Experienced Teachers', description: 'Caring and qualified staff dedicated to your child\'s growth.', color: 'color-blue' },
-        { id: 2, icon: FaHandsHelping, title: 'Safe Environment', description: 'A friendly and secure atmosphere for all students.', color: 'color-yellow' },
-        { id: 3, icon: FaShapes, title: 'Activity Based', description: 'Learning through play, creativity, and hands-on experiences.', color: 'color-green' },
-        { id: 4, icon: FaChild, title: 'Holistic Growth', description: 'Focus on discipline, confidence, values, and personality.', color: 'color-pink' }
+        { id: 1, icon: FaChalkboardTeacher, title: 'Experienced Teachers', description: 'Caring and qualified staff dedicated to your child\'s growth.', color: "#00BFFF", },
+        { id: 2, icon: FaHandsHelping, title: 'Safe Environment', description: 'A friendly and secure atmosphere for all students.', color: "#FFD700", },
+        { id: 3, icon: FaShapes, title: 'Activity Based', description: 'Learning through play, creativity, and hands-on experiences.', color: "#32CD32", },
+        { id: 4, icon: FaChild, title: 'Holistic Growth', description: 'Focus on discipline, confidence, values, and personality.', color: "#FF69B4", }
     ];
 
     return (
@@ -77,7 +77,7 @@ const Home = () => {
                             const IconComponent = feature.icon;
                             return (
                                 <div key={feature.id} className="feature-card">
-                                    <div className={`icon-wrapper ${feature.color}`}><IconComponent /></div>
+                                    <div className={`class-icon-wrapper`} style={{ background: `${feature.color}20`, color: feature.color }}><IconComponent /></div>
                                     <h3>{feature.title}</h3>
                                     <p>{feature.description}</p>
                                 </div>

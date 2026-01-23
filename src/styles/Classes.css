@@ -13,14 +13,25 @@
     border-top: 6px solid #ccc;
     /* fallback */
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     position: relative;
     overflow: hidden;
+}
+
+[data-theme="dark"] .class-card-detailed,
+html.dark-mode .class-card-detailed {
+    background: #1e1e1e;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .class-card-detailed:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .class-card-detailed:hover,
+html.dark-mode .class-card-detailed:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .class-icon-wrapper {
@@ -42,6 +53,12 @@
 .class-card-detailed h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .class-card-detailed h3,
+html.dark-mode .class-card-detailed h3 {
+    color: #ffffff;
 }
 
 .age-badge {
@@ -52,18 +69,37 @@
     border-radius: 15px;
     font-size: 0.9rem;
     margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] .age-badge,
+html.dark-mode .age-badge {
+    background: #333333;
+    color: #ffffff;
 }
 
 .class-desc {
     color: #666;
     margin-bottom: 30px;
     line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .class-desc,
+html.dark-mode .class-desc {
+    color: #b0b0b0;
 }
 
 .class-features {
     text-align: left;
     border-top: 1px solid #eee;
     padding-top: 20px;
+    transition: border-color 0.3s ease;
+}
+
+[data-theme="dark"] .class-features,
+html.dark-mode .class-features {
+    border-top-color: #333333;
 }
 
 .class-features li {
@@ -73,6 +109,12 @@
     margin-bottom: 10px;
     font-weight: 500;
     color: #444;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .class-features li,
+html.dark-mode .class-features li {
+    color: #e0e0e0;
 }
 
 .star-icon {

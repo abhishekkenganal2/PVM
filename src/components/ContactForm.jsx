@@ -10,23 +10,21 @@ const ContactForm = () => {
         e.preventDefault();
         setStatus('sending');
 
-        // NOTE TO USER: Replace these placeholder IDs with your actual EmailJS credentials
-        // service_id, template_id, public_key
-        // For now, we simulate a success after 1.5 seconds.
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-        // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        //   .then((result) => {
-        //       console.log(result.text);
-        //       setStatus('success');
-        //   }, (error) => {
-        //       console.log(error.text);
-        //       setStatus('error');
-        //   });
-
-        setTimeout(() => {
-            setStatus('success');
-            form.current.reset();
-        }, 1500);
+        emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+          .then((result) => {
+              console.log(result);
+              setStatus('success');
+              form.current.reset();
+              setTimeout(() => setStatus(''), 3000);
+          }, (error) => {
+              console.log(error.text);
+              setStatus('error');
+              setTimeout(() => setStatus(''), 3000);
+          });
     };
 
     return (
@@ -46,7 +44,7 @@ const ContactForm = () => {
                 <div className="form-row">
                     <div className="form-group">
                         <label>Age *</label>
-                        <input type="number" name="age" required placeholder="Age" min="2" max="15" />
+                        <input type="number" name="age" required placeholder="Age" min="2" max="6" />
                     </div>
                     <div className="form-group">
                         <label>Class Applying For *</label>
@@ -68,7 +66,7 @@ const ContactForm = () => {
                     </div>
                     <div className="form-group">
                         <label>Email Address *</label>
-                        <input type="email" name="email" required placeholder="your@email.com" />
+                        <input type="email" name="email" required placeholder="your@gmail.com" />
                     </div>
                 </div>
 
