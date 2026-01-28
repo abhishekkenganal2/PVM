@@ -100,6 +100,17 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Staff Details Link Section */}
+            <section className="section bg-light-purple" style={{ backgroundColor: '#f9f3fc' }}>
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <SectionTitle title="Our Management" subtitle="The pillars of our institution" />
+                    <p style={{ maxWidth: '700px', margin: '0 auto 30px', fontSize: '1.1rem' }}>
+                        Get to know the dedicated members of Parivartan Vidya Mandir who guide our vision and mission.
+                    </p>
+                    <Link to="/staff-details" className="btn btn-primary">View Staff & Management Details</Link>
+                </div>
+            </section>
+
             {/* Gallery Preview Section */}
             <section className="section bg-off-white">
                 <div className="container" style={{ textAlign: 'center' }}>

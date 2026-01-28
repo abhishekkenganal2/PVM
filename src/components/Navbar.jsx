@@ -19,10 +19,13 @@ const Navbar = () => {
             id: 3, title: 'Classes', path: '/classes'
         },
         {
-            id: 4, title: 'Gallery', path: '/gallery'
+            id: 4, title: 'Staff Details', path: '/staff-details'
         },
         {
-            id: 5, title: 'Contact', path: '/contact'
+            id: 5, title: 'Gallery', path: '/gallery'
+        },
+        {
+            id: 6, title: 'Contact', path: '/contact'
         },
     ]
 
@@ -41,13 +44,12 @@ const Navbar = () => {
                     {/* You can replace this with an image logo */}
                     <span className="logo-text">Parivartan <span className="highlight">Vidya Mandir</span></span>
                 </Link>
-
+                <button className="dark-mode-toggle" onClick={toggleDarkMode} title={isDarkMode ? 'Light Mode' : 'Dark Mode'}>
+                    {isDarkMode ? <FaSun /> : <FaMoon />}
+                </button>
                 <div className="menu-icon" onClick={toggleMenu}>
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </div>
-
-
-
                 <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
                     {navData.map((item) => (
                         <li className="nav-item">
@@ -56,9 +58,6 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                     ))}
-                    <button className="dark-mode-toggle" onClick={toggleDarkMode} title={isDarkMode ? 'Light Mode' : 'Dark Mode'}>
-                        {isDarkMode ? <FaSun /> : <FaMoon />}
-                    </button>
                 </ul>
             </div>
         </nav>

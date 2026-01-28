@@ -45,11 +45,11 @@ const Footer = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/classes">Classes</Link></li>
+                        <li><Link to="/staff-details">Staff Details</Link></li>
+                        <li><Link to="/gallery">Gallery</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
-
-
 
                 {/* Contact Column */}
                 <div className="footer-col contact-col">

@@ -8,6 +8,7 @@ import About from './pages/About';
 import Classes from './pages/Classes';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import StaffDetails from './pages/StaffDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/classes" element={<Classes />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/staff-details" element={<StaffDetails />} />
           </Routes>
           <Footer />
         </div>

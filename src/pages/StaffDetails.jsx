@@ -31,14 +31,7 @@ const StaffDetails = () => {
                 <title>Staff Details | Parivartan Vidya Mandir</title>
                 <meta name="description" content="Management and Staff Details of Parivartan Vidya Mandir - Sadvidya Shikshan Samsthe." />
             </Helmet>
-
             <div className="staff-details-container">
-                <header className="staff-header">
-                    <span className="society-no">Society no: BJP-S387-2013-14</span>
-                    <h1 className="org-name">SADVIDYA SHIKSHAN SAMSTHE</h1>
-                    <p className="org-address">Behind B.D.A Office Opp: post Office. Vivek Nagar. (W). Bijapur</p>
-                </header>
-
                 <section className="directors-list">
                     <SectionTitle title="Board of Directors" subtitle="Our Guiding Leaders" />
                     <div className="table-responsive">
