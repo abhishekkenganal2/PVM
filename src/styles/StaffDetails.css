@@ -45,10 +45,17 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+}
+
 .directors-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+    min-width: 500px;
 }
 
 .directors-table th, 
@@ -62,10 +69,24 @@
     background-color: rgba(0,0,0,0.05); /* Light grey for header */
     font-weight: 600;
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .directors-table tr:last-child td {
     border-bottom: none;
+}
+
+[data-theme="dark"] .directors-table th,
+html.dark-mode .directors-table th {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .directors-table th,
+[data-theme="dark"] .directors-table td,
+html.dark-mode .directors-table th,
+html.dark-mode .directors-table td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .witnesses-section {
@@ -110,7 +131,40 @@
 
     .directors-table th, 
     .directors-table td {
-        padding: 8px 10px;
-        font-size: 0.9rem;
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+
+    .directors-table {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .staff-details-container {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .directors-list {
+        padding: 1rem;
+    }
+
+    .directors-table th, 
+    .directors-table td {
+        padding: 8px 5px;
+        font-size: 0.75rem;
+    }
+
+    .directors-table {
+        min-width: 350px;
+    }
+
+    .table-responsive {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    .witnesses-grid {
+        grid-template-columns: 1fr;
     }
 }

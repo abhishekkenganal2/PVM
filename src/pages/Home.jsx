@@ -133,7 +133,7 @@ const Home = () => {
             </section>
 
             {/* Staff Details Link Section */}
-            <section className="section bg-light-purple" style={{ backgroundColor: '#f9f3fc' }}>
+            <section className="section bg-light-purple">
                 <div className="container" style={{ textAlign: 'center' }}>
                     <SectionTitle title="Our Management" subtitle="The pillars of our institution" />
                     <p style={{ maxWidth: '700px', margin: '0 auto 30px', fontSize: '1.1rem' }}>
@@ -144,7 +144,7 @@ const Home = () => {
             </section>
 
             {/* Gallery Preview Section */}
-            <section className="section bg-off-white">
+            <section className="section container">
                 <div className="container" style={{ textAlign: 'center' }}>
                     <SectionTitle title="Life at Parivartan" subtitle="Glimpses of activities, celebrations, and learning" />
                     <div className="home-gallery-grid" style={{

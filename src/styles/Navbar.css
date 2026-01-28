@@ -53,7 +53,7 @@
 }
 
 .nav-item {
-    height: 80px;
+    height: auto;
 }
 
 .nav-links {
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 1rem;
     height: 100%;
     font-weight: 600;
     transition: all 0.2s ease;
@@ -164,7 +164,7 @@
 
     .nav-links {
         text-align: center;
-        padding: 2rem;
+        padding: 1rem;
         width: 100%;
         display: table;
     }

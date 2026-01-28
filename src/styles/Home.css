@@ -143,6 +143,16 @@ html.dark-mode .class-card-mini h4 {
     font-weight: 600;
 }
 
+.bg-light-purple {
+    background-color: #f9f3fc;
+    transition: background-color 0.3s ease;
+}
+
+[data-theme="dark"] .bg-light-purple,
+html.dark-mode .bg-light-purple {
+    background-color: #1e1e1e;
+}
+
 @media screen and (max-width: 768px) {
     .home-intro {
         flex-direction: column;
