@@ -12,8 +12,13 @@ const Contact = () => {
     return (
         <div className="section container">
             <Helmet>
-                <title>Parivartan Vidya Mandir | Contact Us</title>
-                <meta name="description" content="Contact Parivartan Vidya Mandir in Bijapur for admissions and enquiries." />
+                <title>Contact Us | Parivartan Vidya Mandir | Admissions Bijapur</title>
+                <meta name="description" content="Get in touch with Parivartan Vidya Mandir for admissions, enquiries, or visits. Located near BDA Office, Vivek Nagar, Bijapur." />
+                <meta name="keywords" content="Contact PVM School, PVM Address, PVM Phone Number, School Admissions Bijapur, Parivartan Vidya Mandir Location" />
+                <meta property="og:title" content="Contact Parivartan Vidya Mandir" />
+                <meta property="og:description" content="Reach out to us for admissions and queries. We are here to help." />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/contact" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/contact" />
             </Helmet>
 
             <SectionTitle title="Contact Us" subtitle="We'd love to hear from you" />

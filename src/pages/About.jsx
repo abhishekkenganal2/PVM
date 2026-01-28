@@ -49,8 +49,13 @@ const About = () => {
     return (
         <div className="about-page">
             <Helmet>
-                <title>Parivartan Vidya Mandir | About Us</title>
-                <meta name="description" content="Learn about Parivartan Vidya Mandir's vision, aims, and history." />
+                <title>About Us | Parivartan Vidya Mandir | History & Vision</title>
+                <meta name="description" content="Discover the history, vision, and mission of Parivartan Vidya Mandir. Established in 2015, we are dedicated to nurturing future leaders in Bijapur." />
+                <meta name="keywords" content="About PVM, PVM History, School Vision Bijapur, Parivartan Vidya Mandir Mission, Principal Message PVM" />
+                <meta property="og:title" content="About Us | Parivartan Vidya Mandir" />
+                <meta property="og:description" content="Learn about our journey, values, and commitment to excellence in education." />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/about" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/about" />
             </Helmet>
 
             {/* Header Banner - could use a different image */}

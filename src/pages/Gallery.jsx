@@ -43,8 +43,13 @@ const Gallery = () => {
     return (
         <div className="section container">
             <Helmet>
-                <title>Parivartan Vidya Mandir | Gallery</title>
-                <meta name="description" content="Explore our gallery showing classrooms, annual day, sports meet, and other celebrations." />
+                <title>Photo Gallery | Parivartan Vidya Mandir | School Activities</title>
+                <meta name="description" content="View our gallery showcasing school activities, annual days, sports meets, and classroom learning moments at Parivartan Vidya Mandir." />
+                <meta name="keywords" content="PVM Gallery, School Photos Bijapur, Annual Day Photos, Sports Day PVM, School Events Gallery" />
+                <meta property="og:title" content="Photo Gallery | Parivartan Vidya Mandir" />
+                <meta property="og:description" content="Capturing moments of joy, learning, and celebration at PVM." />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/gallery" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/gallery" />
             </Helmet>
 
             <SectionTitle title="Our Gallery" subtitle="Capturing Moments of Joy & Learning" />

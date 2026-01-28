@@ -28,8 +28,13 @@ const StaffDetails = () => {
     return (
         <div className="staff-details-page">
             <Helmet>
-                <title>Staff Details | Parivartan Vidya Mandir</title>
-                <meta name="description" content="Management and Staff Details of Parivartan Vidya Mandir - Sadvidya Shikshan Samsthe." />
+                <title>Management & Staff | Parivartan Vidya Mandir</title>
+                <meta name="description" content="Meet the esteemed Board of Directors and managing committee of Parivartan Vidya Mandir, Sadvidya Shikshan Samsthe." />
+                <meta name="keywords" content="PVM Management, Sadvidya Shikshan Samsthe Directors, Parivartan Vidya Mandir Staff, School Board Bijapur" />
+                <meta property="og:title" content="Management & Staff | Parivartan Vidya Mandir" />
+                <meta property="og:description" content="Dedicated leadership guiding the vision of Parivartan Vidya Mandir." />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/staff-details" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/staff-details" />
             </Helmet>
             <div className="staff-details-container">
                 <section className="directors-list">

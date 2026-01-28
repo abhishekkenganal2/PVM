@@ -40,8 +40,40 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Parivartan Vidya Mandir | Home</title>
-                <meta name="description" content="Parivartan Vidya Mandir - An Evolution in Education. Best Preschool and Primary School in Bijapur, Karnataka." />
+                <title>Parivartan Vidya Mandir | Best Preschool & Primary School in Bijapur</title>
+                <meta name="description" content="Welcome to Parivartan Vidya Mandir, Bijapur. We offer a value-based education system focusing on holistic growth, discipline, and academic excellence for your child." />
+                <meta name="keywords" content="Parivartan Vidya Mandir Home, PVM Bijapur, Best Preschool Bijapur, Top Primary School Vijayapura" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/" />
+                <script type="application/ld+json">
+                    {`
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "School",
+                            "name": "Parivartan Vidya Mandir",
+                            "url": "https://parivarthan-vidya-mandir.netlify.app/",
+                            "logo": "https://parivarthan-vidya-mandir.netlify.app/logo.png",
+                            "image": "https://parivarthan-vidya-mandir.netlify.app/assets/pvm_school.jpeg",
+                            "description": "A leading educational institution in Bijapur focusing on holistic child development.",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "Near BDA Office, Managoli Road, Vivek Nagar, Jalanagar",
+                                "addressLocality": "Bijapur",
+                                "addressRegion": "Karnataka",
+                                "postalCode": "586101",
+                                "addressCountry": "IN"
+                            },
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+91-7383386642",
+                                "contactType": "admissions",
+                                "email": "pvmschoolbjp@gmail.com"
+                            },
+                             "sameAs": [
+                                "https://www.facebook.com/people/Parivartan-Vidya-Mandir/100063969792693/"
+                            ]
+                        }
+                    `}
+                </script>
             </Helmet>
 
             {/* Intro Section */}

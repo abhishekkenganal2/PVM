@@ -57,8 +57,13 @@ const Classes = () => {
     return (
         <div className="classes-page section container">
             <Helmet>
-                <title>Parivartan Vidya Mandir | Classes</title>
-                <meta name="description" content="Explore the classes offered at Parivartan Vidya Mandir, from Play Group to Primary School." />
+                <title>Classes Offered | Parivartan Vidya Mandir | PlayGroup to Primary</title>
+                <meta name="description" content="Explore our curriculum from Play Group, Nursery, LKG, UKG to Primary School. Activity-based learning for holistic development." />
+                <meta name="keywords" content="PVM Classes, Preschool Syllabus Bijapur, Kindergarten Bijapur, Primary School Curriculum, Activity Based Learning" />
+                <meta property="og:title" content="Classes Offered | Parivartan Vidya Mandir" />
+                <meta property="og:description" content="Tailored learning programs for every age group, ensuring a strong foundation." />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/classes" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/classes" />
             </Helmet>
 
             <SectionTitle title="Our Classes" subtitle="Tailored Learning for Every Age" />
