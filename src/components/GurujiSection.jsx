@@ -23,7 +23,7 @@ const GurujiSection = () => {
                         viewport={{ once: true }}
                     >
                         <h2 className="section-title">Our Guiding Light</h2>
-                        <h3 className="guruji-name">Rushi Prabakar Guruji</h3>
+                        <h3 className="guruji-name">Rishi Prabakar Guruji</h3>
                         <p className="guruji-text">
                             Our school is founded on the profound ethics and teachings of <strong>Guruji Shri Rishi Prabhakar </strong> (1948–2014) was an Indian yogi who instructed many spiritual teachers across the country. He was the founder of <strong>Rishi Samskruti Vidya Kendra</strong>, a Public Charitable Trust. He also developed many programs such as <strong>Siddha Samadhi Yoga (SSY)</strong>, <strong>Kaya Kalpa Kriya (KKK)</strong>, <strong>Advanced Meditation Course (AMC)</strong>, <strong>Bhava Samadhi Training (BST)</strong>, <strong>Hundred Percent Memory (HMP, also known as RCRT)</strong>, <strong>Infant Siddha Program (ISP)</strong> and <strong>Inspirational Leadership in Rural Development (ILRD)</strong> for the well-being of humanity.
                         </p>
