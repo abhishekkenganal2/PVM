@@ -46,9 +46,7 @@ const Navbar = () => {
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </div>
 
-                <button className="dark-mode-toggle" onClick={toggleDarkMode} title={isDarkMode ? 'Light Mode' : 'Dark Mode'}>
-                    {isDarkMode ? <FaSun /> : <FaMoon />}
-                </button>
+
 
                 <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
                     {navData.map((item) => (
@@ -58,6 +56,9 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                     ))}
+                    <button className="dark-mode-toggle" onClick={toggleDarkMode} title={isDarkMode ? 'Light Mode' : 'Dark Mode'}>
+                        {isDarkMode ? <FaSun /> : <FaMoon />}
+                    </button>
                 </ul>
             </div>
         </nav>

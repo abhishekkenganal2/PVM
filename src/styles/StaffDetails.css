@@ -1,0 +1,116 @@
+
+.staff-details-container {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.staff-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 2rem;
+}
+
+.society-no {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.org-name {
+    font-size: 2.5rem;
+    color: var(--primary-color); 
+    /* Fallback if variable not defined, though widely used in project */
+    color: #800080; /* Purple shade from image */
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.org-address {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.directors-list {
+    margin-bottom: 4rem;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.directors-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.directors-table th, 
+.directors-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.directors-table th {
+    background-color: rgba(0,0,0,0.05); /* Light grey for header */
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.directors-table tr:last-child td {
+    border-bottom: none;
+}
+
+.witnesses-section {
+    margin-top: 3rem;
+}
+
+.witnesses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.witness-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.witness-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.witness-address {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .staff-details-container {
+        padding: 2rem 1rem;
+    }
+    
+    .org-name {
+        font-size: 1.8rem;
+    }
+
+    .directors-table th, 
+    .directors-table td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}

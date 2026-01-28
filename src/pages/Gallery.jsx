@@ -3,6 +3,7 @@ import SectionTitle from '../components/SectionTitle';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/Gallery.css';
+import { interactiveLearning, readingTime, groupActivity, culturalDance, stagePerformance, flagHoisting, patriotic, sportsDay, tugOfWar, celebration, picnic, dance } from '../assets/gallery';
 
 const Gallery = () => {
     useEffect(() => {
@@ -11,30 +12,30 @@ const Gallery = () => {
 
     const [filter, setFilter] = useState('All');
 
-    const categories = ['All', 'Classroom', 'Annual Day', 'Independence Day', 'Sports Meet', 'Celebrations'];
+    const categories = ['All', 'Classroom', 'Annual Day', 'Patriotic Days', 'Sports Meet', 'Celebrations'];
 
     const images = [
         // Classroom
-        { id: 1, category: 'Classroom', src: "https://images.unsplash.com/photo-1577896335477-2858506f48db?q=80&w=600&auto=format&fit=crop", title: "Interactive Learning" },
-        { id: 2, category: 'Classroom', src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop", title: "Reading Time" },
-        { id: 3, category: 'Classroom', src: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=600&auto=format&fit=crop", title: "Group Activities" },
+        { id: 1, category: 'Classroom', src: interactiveLearning, title: "Interactive Learning" },
+        { id: 2, category: 'Classroom', src: readingTime, title: "Reading Time" },
+        { id: 3, category: 'Classroom', src: groupActivity, title: "Group Activities" },
 
         // Annual Day
-        { id: 4, category: 'Annual Day', src: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=600&auto=format&fit=crop", title: "Cultural Dance" },
-        { id: 5, category: 'Annual Day', src: "https://images.unsplash.com/photo-1627552245715-77d79b16035c?q=80&w=600&auto=format&fit=crop", title: "Stage Performance" },
+        { id: 4, category: 'Annual Day', src: culturalDance, title: "Cultural Dance" },
+        { id: 5, category: 'Annual Day', src: stagePerformance, title: "Stage Performance" },
+        { id: 6, category: 'Annual Day', src: dance, title: "Dance Performance" },
 
-        // Independence Day & Republic Day
-        { id: 6, category: 'Independence Day', src: "https://images.unsplash.com/photo-1563536310477-c7b4e3a800c2?q=80&w=600&auto=format&fit=crop", title: "Flag Hoisting" },
-        { id: 7, category: 'Independence Day', src: "https://images.unsplash.com/photo-1563823438-bb4e6d47b59e?q=80&w=600&auto=format&fit=crop", title: "Patriotic Skit" },
-
+        // Patriotic Days
+        { id: 7, category: 'Patriotic Days', src: flagHoisting, title: "Flag Hoisting" },
+        { id: 8, category: 'Patriotic Days', src: patriotic, title: "Patriotic Skit" },
         // Sports
-        { id: 8, category: 'Sports Meet', src: "https://images.unsplash.com/photo-1561580125-028ee3bd62eb?q=80&w=600&auto=format&fit=crop", title: "Running Race" },
-        { id: 9, category: 'Sports Meet', src: "https://images.unsplash.com/photo-1576267423048-15c0040fec78?q=80&w=600&auto=format&fit=crop", title: "Tug of War" },
+        { id: 9, category: 'Sports Meet', src: sportsDay, title: "Running Race" },
+        { id: 10, category: 'Sports Meet', src: tugOfWar, title: "Tug of War" },
 
         // Other Celebrations (New Year, Teachers Day, Childrens Day)
-        { id: 10, category: 'Celebrations', src: "https://images.unsplash.com/photo-1530041686259-518f5316335d?q=80&w=600&auto=format&fit=crop", title: "Children's Day Fun" },
-        { id: 11, category: 'Celebrations', src: "https://images.unsplash.com/photo-1520697830682-bbb6e85e2b0a?q=80&w=600&auto=format&fit=crop", title: "New Year Party" },
-        { id: 12, category: 'Celebrations', src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop", title: "Teachers Day" },
+        { id: 11, category: 'Celebrations', src: celebration, title: "New Year Celebration" },
+        { id: 12, category: 'Celebrations', src: picnic, title: "Picnic day" },
+        { id: 13, category: 'Celebrations', src: dance, title: "Dance Performance" },
     ];
 
     const filteredImages = filter === 'All' ? images : images.filter(img => img.category === filter);

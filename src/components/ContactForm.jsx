@@ -15,16 +15,16 @@ const ContactForm = () => {
         const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
         emailjs.sendForm(serviceId, templateId, form.current, publicKey)
-          .then((result) => {
-              console.log(result);
-              setStatus('success');
-              form.current.reset();
-              setTimeout(() => setStatus(''), 3000);
-          }, (error) => {
-              console.log(error.text);
-              setStatus('error');
-              setTimeout(() => setStatus(''), 3000);
-          });
+            .then((result) => {
+                console.log(result);
+                setStatus('success');
+                form.current.reset();
+                setTimeout(() => setStatus(''), 3000);
+            }, (error) => {
+                console.log(error.text);
+                setStatus('error');
+                setTimeout(() => setStatus(''), 3000);
+            });
     };
 
     return (

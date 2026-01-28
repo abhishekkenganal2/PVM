@@ -73,7 +73,7 @@ html.dark-mode .intro-text p {
 
 .intro-img img {
     border-radius: 20px;
-    box-shadow: 20px 20px 0 var(--primary-yellow);
+    box-shadow: 5px 5px 0 var(--primary-yellow);
 }
 
 .vm-section {

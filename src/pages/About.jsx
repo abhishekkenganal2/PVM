@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SectionTitle from '../components/SectionTitle';
 import '../styles/About.css';
 import { Helmet } from 'react-helmet-async';
-import { FaHistory, FaEye, FaBullseye, FaUserTie, FaStar     } from 'react-icons/fa';
+import { FaHistory, FaEye, FaBullseye, FaUserTie, FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const About = () => {

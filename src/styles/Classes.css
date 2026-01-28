@@ -128,16 +128,35 @@ html.dark-mode .class-features li {
     padding: 60px;
     border-radius: 20px;
     border: 1px solid #eee;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme="dark"] .enroll-cta,
+html.dark-mode .enroll-cta {
+    background: linear-gradient(135deg, #1e1e1e 0%, #262626 100%);
+    border-color: #333333;
 }
 
 .enroll-cta h3 {
     font-size: 2rem;
     color: var(--primary-blue);
     margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .enroll-cta h3,
+html.dark-mode .enroll-cta h3 {
+    color: #64b5f6;
 }
 
 .enroll-cta p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .enroll-cta p,
+html.dark-mode .enroll-cta p {
+    color: #b0b0b0;
 }
