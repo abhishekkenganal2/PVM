@@ -48,8 +48,8 @@ const Gallery = () => {
                 <meta name="keywords" content="PVM Gallery, School Photos Bijapur, Annual Day Photos, Sports Day PVM, School Events Gallery" />
                 <meta property="og:title" content="Photo Gallery | Parivartan Vidya Mandir" />
                 <meta property="og:description" content="Capturing moments of joy, learning, and celebration at PVM." />
-                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/gallery" />
-                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/gallery" />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.in/gallery" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.in/gallery" />
             </Helmet>
 
             <SectionTitle title="Our Gallery" subtitle="Capturing Moments of Joy & Learning" />

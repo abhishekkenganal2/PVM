@@ -17,8 +17,8 @@ const Contact = () => {
                 <meta name="keywords" content="Contact PVM School, PVM Address, PVM Phone Number, School Admissions Bijapur, Parivartan Vidya Mandir Location" />
                 <meta property="og:title" content="Contact Parivartan Vidya Mandir" />
                 <meta property="og:description" content="Reach out to us for admissions and queries. We are here to help." />
-                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/contact" />
-                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/contact" />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.in/contact" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.in/contact" />
             </Helmet>
 
             <SectionTitle title="Contact Us" subtitle="We'd love to hear from you" />
@@ -52,7 +52,7 @@ const Contact = () => {
                             <div style={{ color: '#00BFFF', fontSize: '1.2rem' }}><FaPhone /></div>
                             <div>
                                 <strong>Phone:</strong><br />
-                                <a href="tel:7383386642">7383386642</a>
+                                <a href="tel:+91 9731370285">+91 9731370285</a>
                             </div>
                         </div>
 

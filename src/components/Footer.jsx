@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGoogle, FaInstagram, FaYoutube } from 'react-icons/fa';
 import '../styles/Footer.css';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +32,7 @@ const Footer = () => {
                         Nurturing young minds since 2015. We are committed to holistic development, discipline, and creative learning.
                     </p>
                     <div className="social-links">
-                        <a href="#" className="social-icon fb"><FaFacebook /></a>
+                        <a href="https://www.justdial.com/Bijapur-Karnataka/Parivartan-Vidhya-Mandir-Near-Bda-Office-Jalanagar/9999P8352-8352-180423184407-F6Z4_BZDET" className="social-icon fb"><FaGoogle /></a>
                         <a href="https://www.instagram.com/parivartan_vidya_mandir/" className="social-icon insta"><FaInstagram /></a>
                         <a href="https://www.youtube.com/channel/UCc3KuZj0niq8UHaF3lKd_Rg" className="social-icon yt"><FaYoutube /></a>
                     </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                     </div>
                     <div className="contact-item">
                         <FaPhone className="footer-icon" />
-                        <p><a href="tel:7383386642">7383386642</a></p>
+                        <p><a href="tel:+91 9731370285">+91 9731370285</a></p>
                     </div>
                     <div className="contact-item">
                         <FaEnvelope className="footer-icon" />

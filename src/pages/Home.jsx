@@ -20,7 +20,6 @@ const Home = () => {
         { id: 2, name: 'Nursery' },
         { id: 3, name: 'Jr. KG' },
         { id: 4, name: 'Sr. KG' },
-        { id: 5, name: 'Primary School' }
     ];
 
     const galleryItems = [
@@ -43,16 +42,16 @@ const Home = () => {
                 <title>Parivartan Vidya Mandir | Best Preschool & Primary School in Bijapur</title>
                 <meta name="description" content="Welcome to Parivartan Vidya Mandir, Bijapur. We offer a value-based education system focusing on holistic growth, discipline, and academic excellence for your child." />
                 <meta name="keywords" content="Parivartan Vidya Mandir Home, PVM Bijapur, Best Preschool Bijapur, Top Primary School Vijayapura" />
-                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.in/" />
                 <script type="application/ld+json">
                     {`
                         {
                             "@context": "https://schema.org",
                             "@type": "School",
                             "name": "Parivartan Vidya Mandir",
-                            "url": "https://parivarthan-vidya-mandir.netlify.app/",
-                            "logo": "https://parivarthan-vidya-mandir.netlify.app/logo.png",
-                            "image": "https://parivarthan-vidya-mandir.netlify.app/assets/pvm_school.jpeg",
+                            "url": "https://parivarthan-vidya-mandir.in/",
+                            "logo": "https://parivarthan-vidya-mandir.in/logo.png",
+                            "image": "https://parivarthan-vidya-mandir.in/assets/pvm_school.jpeg",
                             "description": "A leading educational institution in Bijapur focusing on holistic child development.",
                             "address": {
                                 "@type": "PostalAddress",
@@ -64,7 +63,7 @@ const Home = () => {
                             },
                             "contactPoint": {
                                 "@type": "ContactPoint",
-                                "telephone": "+91-7383386642",
+                                "telephone": "+91-+91 9731370285",
                                 "contactType": "admissions",
                                 "email": "pvmschoolbjp@gmail.com"
                             },

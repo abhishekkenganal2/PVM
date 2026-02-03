@@ -10,7 +10,7 @@ const StaffDetails = () => {
 
     const directors = [
         { id: 1, name: "Smt : Laxmi.Girish. Akkalkot", designation: "President" },
-        { id: 2, name: "Shri: Mounesh.Gurappa.Badiger", designation: "Vice-President" },
+        // { id: 2, name: "Shri: Mounesh.Gurappa.Badiger", designation: "Vice-President" },
         { id: 3, name: "Shri: Danappa.Bhojappa.Kotnal", designation: "Secretary" },
         { id: 4, name: "Shri: Mahesh.Chandrakant. Solapurkar", designation: "Director" },
         { id: 5, name: "Shri: Nitin . Prakash. Desai", designation: "Director" },
@@ -33,8 +33,8 @@ const StaffDetails = () => {
                 <meta name="keywords" content="PVM Management, Sadvidya Shikshan Samsthe Directors, Parivartan Vidya Mandir Staff, School Board Bijapur" />
                 <meta property="og:title" content="Management & Staff | Parivartan Vidya Mandir" />
                 <meta property="og:description" content="Dedicated leadership guiding the vision of Parivartan Vidya Mandir." />
-                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/staff-details" />
-                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/staff-details" />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.in/staff-details" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.in/staff-details" />
             </Helmet>
             <div className="staff-details-container">
                 <section className="directors-list">

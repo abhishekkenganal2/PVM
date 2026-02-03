@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 import { useDarkMode } from '../context/DarkModeContext';
+import pvmLogo from '../assets/gallery/pvm_logo.png';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -41,7 +42,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="container navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMenu}>
-                    {/* You can replace this with an image logo */}
+                    <img src={pvmLogo} alt="PVM Logo" className="logo-img" />
                     <span className="logo-text">Parivartan <span className="highlight">Vidya Mandir</span></span>
                 </Link>
                 <button className="dark-mode-toggle" onClick={toggleDarkMode} title={isDarkMode ? 'Light Mode' : 'Dark Mode'}>

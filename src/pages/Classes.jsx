@@ -44,14 +44,6 @@ const Classes = () => {
             color: "#00BFFF",
             features: ["Adanced Phonics", "Problem Solving", "Public Speaking"]
         },
-        {
-            name: "Primary School",
-            age: "6+ Years",
-            desc: "A comprehensive curriculum focused on academic excellence, holistic development, and moral values.",
-            icon: <FaGraduationCap />,
-            color: "#9370DB",
-            features: ["Core Subjects", "Sports & Yoga", "Computer Labs"]
-        }
     ];
 
     return (
@@ -62,8 +54,8 @@ const Classes = () => {
                 <meta name="keywords" content="PVM Classes, Preschool Syllabus Bijapur, Kindergarten Bijapur, Primary School Curriculum, Activity Based Learning" />
                 <meta property="og:title" content="Classes Offered | Parivartan Vidya Mandir" />
                 <meta property="og:description" content="Tailored learning programs for every age group, ensuring a strong foundation." />
-                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/classes" />
-                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/classes" />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.in/classes" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.in/classes" />
             </Helmet>
 
             <SectionTitle title="Our Classes" subtitle="Tailored Learning for Every Age" />

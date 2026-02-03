@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://parivarthan-vidya-mandir.netlify.app/sitemap.xml
+Sitemap: https://parivarthan-vidya-mandir.in/sitemap.xml

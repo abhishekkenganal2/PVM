@@ -54,8 +54,8 @@ const About = () => {
                 <meta name="keywords" content="About PVM, PVM History, School Vision Bijapur, Parivartan Vidya Mandir Mission, Principal Message PVM" />
                 <meta property="og:title" content="About Us | Parivartan Vidya Mandir" />
                 <meta property="og:description" content="Learn about our journey, values, and commitment to excellence in education." />
-                <meta property="og:url" content="https://parivarthan-vidya-mandir.netlify.app/about" />
-                <link rel="canonical" href="https://parivarthan-vidya-mandir.netlify.app/about" />
+                <meta property="og:url" content="https://parivarthan-vidya-mandir.in/about" />
+                <link rel="canonical" href="https://parivarthan-vidya-mandir.in/about" />
             </Helmet>
 
             {/* Header Banner - could use a different image */}

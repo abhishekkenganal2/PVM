@@ -90,11 +90,18 @@ html.dark-mode .intro-text p {
     box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s ease, color 0.3s ease;
 }
 
 .vm-card:hover {
     transform: translateY(-10px);
+}
+
+[data-theme="dark"] .vm-card,
+html.dark-mode .vm-card {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .vm-card.blue {
@@ -103,6 +110,16 @@ html.dark-mode .intro-text p {
 
 .vm-card.yellow {
     border-top: 5px solid var(--primary-yellow);
+}
+
+.vm-card h3 {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .vm-card h3,
+html.dark-mode .vm-card h3 {
+    color: #ffffff;
 }
 
 .icon-circle {
@@ -134,6 +151,13 @@ html.dark-mode .intro-text p {
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .vm-card ul li,
+html.dark-mode .vm-card ul li {
+    color: #e0e0e0;
 }
 
 .vm-card ul li::before {
